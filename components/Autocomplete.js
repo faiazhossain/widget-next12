@@ -36,7 +36,7 @@ const Autocomplete = ({ onSelect }) => {
     const fetchData = async () => {
       setLoading(true);
       try {
-        const response = await autocomplete({ q: query, area: 'mirpur' });
+        const response = await autocomplete({ q: query });
         setResults(response.places);
         setIsDropdownVisible(true);
       } catch (err) {
